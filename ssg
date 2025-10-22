@@ -1,0 +1,29 @@
+<?php
+
+use CrudeSSG\Data;
+use CrudeSSG\FsWatcher;
+use CrudeSSG\Renderer;
+use CrudeSSG\SSGHandler;
+
+chdir(__DIR__);
+require_once(__DIR__ . "/vendor/autoload.php");
+$router = require_once 'routes.php';
+
+Data::useDirectory("data");
+$renderer = new Renderer('templates');
+
+$watcher = new FsWatcher(__DIR__, [__DIR__ . '/public']);
+$watcher->watch(function () use ($renderer, $router) {
+    print ("\nStarting SSG generation...\n\n");
+    $startTime = microtime(true);
+    $ssgHandler = new SSGHandler(
+        $renderer,
+        $router,
+        __DIR__ . '/public',
+        __DIR__ . '/assets'
+    );
+    $ssgHandler->handle();
+    $endTime = microtime(true);
+    $duration = $endTime - $startTime;
+    printf("\nSSG generation completed in %.2f seconds.\n", $duration);
+});
