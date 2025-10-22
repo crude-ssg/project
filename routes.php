@@ -35,7 +35,7 @@ $routes->get('/shop/{shop}/view/{product}', [ProductsController::class, 'shop'])
         fn() => Data::load('shops')->map(fn($shop) => [
             'shop' => $shop['slug'],
             'product' => Data::load('products')->where('shop', $shop['slug'])->pluck('slug')
-        ])
+        ])->all()
     );
 
 return $routes;
