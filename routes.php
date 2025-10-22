@@ -1,5 +1,6 @@
 <?php
 
+use App\BasicPagesController;
 use App\ProductsController;
 use CrudeSSG\Data;
 use CrudeSSG\Router;
@@ -7,7 +8,7 @@ use CrudeSSG\Router;
 $routes = new Router();
 
 $routes->get('/', [BasicPagesController::class, 'home'])->withSsg();
-$routes->get('/contact', [BasicPagesController::class, 'about'])->withSsg();
+$routes->get('/about', [BasicPagesController::class, 'about'])->withSsg();
 
 $routes->get('/products', [ProductsController::class, 'list'])->withSsg();
 

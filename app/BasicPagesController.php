@@ -1,14 +1,18 @@
 <?php
 
+namespace App;
+
+use CrudeSSG\Page;
+
 class BasicPagesController
 {
     public static function home()
     {
-        return \CrudeSSG\Page::make('home.twig');
+        return Page::make('home.twig');
     }
 
     public static function about()
     {
-        return \CrudeSSG\Page::make('about.twig');
+        return Page::make('about.twig');
     }
 }
