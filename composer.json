@@ -1,5 +1,5 @@
 {
-    "name": "crude-ssg/template",
+    "name": "crude-ssg/project",
     "description": "Project template",
     "type": "project",
     "license": "BSD-3-Clause",
@@ -14,5 +14,7 @@
             "email": "RonaldWilsonMachado@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "crude-ssg/core": "v1.0.0"
+    }
 }
