@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "41ab86ca862af0c251aecc5033c9e256",
+    "content-hash": "3c000ac01ca6d1aacc0a01aacf29c1d1",
     "packages": [
         {
             "name": "crude-ssg/core",
-            "version": "v1.0.0",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/crude-ssg/core.git",
-                "reference": "cdf7fa3473131ffd543194e41387a0f18e3024c9"
+                "reference": "39cf647bddd7e7a122f053c5da542bb08715c5ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/crude-ssg/core/zipball/cdf7fa3473131ffd543194e41387a0f18e3024c9",
-                "reference": "cdf7fa3473131ffd543194e41387a0f18e3024c9",
+                "url": "https://api.github.com/repos/crude-ssg/core/zipball/39cf647bddd7e7a122f053c5da542bb08715c5ab",
+                "reference": "39cf647bddd7e7a122f053c5da542bb08715c5ab",
                 "shasum": ""
             },
             "require": {
@@ -43,9 +43,9 @@
             ],
             "support": {
                 "issues": "https://github.com/crude-ssg/core/issues",
-                "source": "https://github.com/crude-ssg/core/tree/v1.0.0"
+                "source": "https://github.com/crude-ssg/core/tree/v1.0.2"
             },
-            "time": "2025-10-22T07:36:04+00:00"
+            "time": "2025-10-22T08:56:38+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",

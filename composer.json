@@ -15,6 +15,6 @@
         }
     ],
     "require": {
-        "crude-ssg/core": "v1.0.0"
+        "crude-ssg/core": "^v1.0.0"
     }
 }
