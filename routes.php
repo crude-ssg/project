@@ -33,10 +33,13 @@ $routes->get('/products/{product}', [ProductsController::class, 'detail'])
 
 $routes->get('/shop/{shop}/view/{product}', [ProductsController::class, 'shop'])
     ->withSsg(
-        fn() => Data::load('shops')->map(fn($shop) => [
-            'shop' => $shop['slug'],
-            'product' => Data::load('products')->where('shop', $shop['slug'])->pluck('slug')
-        ])->all()
+        fn() => Data::load('shops')->wireWith(
+            'shop',
+            'slug',
+            'product',
+            'slug',
+            'products',
+        )
     );
 
 return $routes;
