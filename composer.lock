@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3c000ac01ca6d1aacc0a01aacf29c1d1",
+    "content-hash": "f7ea6643c020fbf1a18024c45f14cb12",
     "packages": [
         {
             "name": "crude-ssg/core",
-            "version": "v1.0.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/crude-ssg/core.git",
-                "reference": "39cf647bddd7e7a122f053c5da542bb08715c5ab"
+                "reference": "6cbb6d3b31957343cc4201925470f474a09b0a85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/crude-ssg/core/zipball/39cf647bddd7e7a122f053c5da542bb08715c5ab",
-                "reference": "39cf647bddd7e7a122f053c5da542bb08715c5ab",
+                "url": "https://api.github.com/repos/crude-ssg/core/zipball/6cbb6d3b31957343cc4201925470f474a09b0a85",
+                "reference": "6cbb6d3b31957343cc4201925470f474a09b0a85",
                 "shasum": ""
             },
             "require": {
@@ -25,6 +25,7 @@
                 "symfony/yaml": "^7.3",
                 "twig/twig": "^3.21"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -43,9 +44,9 @@
             ],
             "support": {
                 "issues": "https://github.com/crude-ssg/core/issues",
-                "source": "https://github.com/crude-ssg/core/tree/v1.0.2"
+                "source": "https://github.com/crude-ssg/core/tree/master"
             },
-            "time": "2025-10-22T08:56:38+00:00"
+            "time": "2025-11-21T06:43:38+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -284,16 +285,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v7.3.3",
+            "version": "v7.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "d4f4a66866fe2451f61296924767280ab5732d9d"
+                "reference": "90208e2fc6f68f613eae7ca25a2458a931b1bacc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/d4f4a66866fe2451f61296924767280ab5732d9d",
-                "reference": "d4f4a66866fe2451f61296924767280ab5732d9d",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/90208e2fc6f68f613eae7ca25a2458a931b1bacc",
+                "reference": "90208e2fc6f68f613eae7ca25a2458a931b1bacc",
                 "shasum": ""
             },
             "require": {
@@ -336,7 +337,7 @@
             "description": "Loads and dumps YAML files",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/yaml/tree/v7.3.3"
+                "source": "https://github.com/symfony/yaml/tree/v7.3.5"
             },
             "funding": [
                 {
@@ -356,20 +357,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-08-27T11:34:33+00:00"
+            "time": "2025-09-27T09:00:46+00:00"
         },
         {
             "name": "twig/twig",
-            "version": "v3.21.1",
+            "version": "v3.22.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "285123877d4dd97dd7c11842ac5fb7e86e60d81d"
+                "reference": "4509984193026de413baf4ba80f68590a7f2c51d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/285123877d4dd97dd7c11842ac5fb7e86e60d81d",
-                "reference": "285123877d4dd97dd7c11842ac5fb7e86e60d81d",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/4509984193026de413baf4ba80f68590a7f2c51d",
+                "reference": "4509984193026de413baf4ba80f68590a7f2c51d",
                 "shasum": ""
             },
             "require": {
@@ -423,7 +424,7 @@
             ],
             "support": {
                 "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v3.21.1"
+                "source": "https://github.com/twigphp/Twig/tree/v3.22.0"
             },
             "funding": [
                 {
@@ -435,13 +436,15 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-05-03T07:21:55+00:00"
+            "time": "2025-10-29T15:56:47+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "crude-ssg/core": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {},
